@@ -16,7 +16,6 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
@@ -78,9 +77,41 @@ span{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 70vh;
 }
 
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2000ms;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* logos // bildeshow // koffer ikke */
+.logos{
+    display: flex;
+    align-items: center;
+}
+.logo > img{
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(3){
+    transition-delay: 400ms;
+}
+.logo:nth-child(4){
+    transition-delay: 600ms;
+}
 
 /* header start */
 .header{
@@ -228,12 +259,24 @@ span{
         margin-bottom: 60px ;
         width: 100%;
     }
+    .logos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
 }
 @media (max-width: 400px){
     html{
         font-size: 50%;
     }
+    .logos{
+        display: flex;
+        flex-direction: column;
+    }
+    .about > .row > .pyImg{
+        margin: 0 0 16rem 0;
+    }
+    
     
 
 }
@@ -290,6 +333,7 @@ span{
     align-items: center;
     justify-content: center;
     flex:1 1 45rem;
+
 }
 .about .row .image .fa-solid, .fa-brands{
     padding: 100px 0;
@@ -297,12 +341,17 @@ span{
     color: rgb(255, 255, 255);
 }
 .about .row .image img{
-    width: 100%;
+    width: 90%;
     border-radius: 1rem;
- }
-.image{
-    margin: 4rem;
 }
+
+.about > .row > .pyImg{
+    margin: 6rem 0 16rem 0;
+}
+.about > .row > .pyImg2{
+    margin: 6rem 0;
+}
+
 
 .about .row .content{
     flex:1 1 45rem;
@@ -438,7 +487,6 @@ ul li{
 
 .footer-col ul li a{
     font-size: 1.8rem;
-    text-transform: capitalize;
     color:#ffffff;
     text-decoration: none;
     font-weight: 300;
@@ -446,7 +494,7 @@ ul li{
 }
 
 .footer-col ul li a:hover{
-    color: rgb(142, 165, 228);
+    color: var(--main-color);
     padding-left: 10px;
 }
 
@@ -470,4 +518,47 @@ ul li{
 .footer-col .social-links a:hover{
     color: var(--main-color);
     background-color: #ffffff;
+}
+
+/* snake */
+hr{
+    height: 2px;
+    width: 33%;
+    color: black;
+}
+
+#board{
+    margin: 0 auto;
+    margin-top: 0;
+}
+.highscore{
+    margin: 3rem;
+}
+.highscore > h1{
+    font-size: 4rem;
+    margin: 2rem;
+}
+.highscore > h2{
+    font-size: 2rem;
+}
+
+#scoreCont{
+    margin-bottom: 2px;
+}
+#scoreCont > h2 {
+    color: white;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 0;
+    padding: 10px 0px;
+}
+
+#r{
+    color: white;
+    background-color: black;
+    margin-bottom: 0;
+}
+#r:hover{
+    background-color: white;
+    color: black;
 }

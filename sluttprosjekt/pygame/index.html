@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortifolio</title>
-    <link rel="stylesheet" href="./daafjord/style2.css">
+    <link rel="stylesheet" href="../daafjord/style2.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +14,10 @@
 
     <style>
         :root{
-        --main-color: #3c6dac;
+        --main-color: #008102;
         --black:#13131a;
         --white:#fff;
-        --headerText:rgb(191, 214, 255);
+        --headerText:rgb(106, 236, 111);
         --textMainColor:var(--white);
         --bg:#000000;
         --border:.1rem solid rgba(255, 255, 255, .3)
@@ -26,11 +26,11 @@
         min-height: 100vh;
         display: flex;
         align-items: center;
-        background: var(--bg);
+        background: var(--black);
         background-size: cover;
         background-position: center;
-        /*    opacity: 0.7; */
         }
+
 
     </style>
 
@@ -40,16 +40,16 @@
 <!-- header start -->
 <header class="header">
 
-    <a href="#" class="logo">¨
+    <a href="../index.html" class="logo">¨
         <div class="fa-solid fa-a fa-10x" id="homebtn"></div>
     </a>
 
     <nav class="navbar">
-        <a href="#pi" class="link">To språk</a>
-        <a href="#fa" class="link">IT1</a>
-        <a href="#iv" class="link">Pygame</a>
-        <a href="#fe" class="link">Front-end prosjekt</a>
-        <a href="#kilder" class="link">Kilder & Kontakt</a>
+        <a href="../index.html" class="link">Home</a>
+        <a href="#pi" class="link">PygameInfo</a>
+<!--         <a href="#fa" class="link">Tips & Triks</a> -->
+        <a href="#iv" class="link">Prosjekter</a>
+        <a href="#contact" class="link">Kontakt</a>
     </nav>
 
     <div class="icons">
@@ -67,9 +67,12 @@
 <!-- Home section -->
 <section class="home" id="home">
     <div class="content">
-        <h3>Aksel Wedset-Lilleng</h3>
-        <p>Velkommen til mitt IT1 sluttprosjekt. Med 10-12 obligatoriske timer IT i uka, hver uke i et år, har det blitt noen timer på små og store prosjekter i løpet av dette året. Mitt sluttprosjekt er derfor sammensatt av noen av disse prosjektene. </p>
-        <a href="#pi" class="btn">Mer om mitt IT år</a>
+        <h3>PYGAME</h3>
+        <p>Flere er kanskje kjent med python fra matten. Pygame er en morsom del av Python språket som er 
+            veldig egnet til å lage enkle, men kule og morsomme spill. På denne siden er det litt om pygame og mine pygame
+            prosjekter fra i år. 
+        </p>
+        <a href="#pi" class="btn">Lær mer</a>
     </div>
 
 </section>
@@ -78,7 +81,7 @@
 <!-- Pi -->
 <section class="about" id="pi">
 
-    <h1 class="heading"> <span>To</span> språk</h1>
+    <h1 class="heading"> <span>Pygame</span> i et nøtteskall</h1>
 
     <div class="row">
 
@@ -87,73 +90,46 @@
         </div>
 
         <div class="content">
-            <h3>Med to klasser it følger to programmeringsspråk</h3>
-            <p>I IT1 programmerer vi i HTML, CSS og JavaScript, mens vi i IT2 programmerer hovedsaklig i Python. To språk er mye å lære seg på en gang, men gir store muligheter når det kommer til hva man kan lage. Scroll videre for å se eksempler! </p>
-            <a href="#fa" class="btn">Scroll</a>
+            <h3>Hva er pygame</h3>
+            <p>Pygame er et bibliotek fra Python. Biblioteket inneholder masse innebygde funksjoner som går det lettere å lage visuelle ting. Dette kan være spill, animasjoner, illustrasjoner... egenlig hva som helst visuelt. Prosjektene kan være store, men også veldig småe og enkle.</p>
+            <a href="#iv" class="btn">Noen av mine prosjekter</a>
         </div>
 
     </div>
 
 </section>
-<section class="about" id="fa">
 
-    <h1 class="heading"> Java<span>script</span></h1>
-
-    <div class="row">
-
-        <div class="image">
-            <i class="fa-brands fa-js"></i>
-        </div>
-
-        <div class="content">
-            <h3>Muligheter</h3>
-            <p>Som vi har lært kan JavaScript brukes til å gjøre mye kult med nettsider. Få hamburger-menyen til å animere, ting til å "togle", lage spill, regnere osv osv. Mulighetene til kombiasjonen JavaScript, HTML, CSS er enorme. <br> Se noen av mine prosjekter her!</p>
-            <a href="./java/index.html" class="btn">Prosjekter</a>
-        </div>
-
-    </div>
-
-</section>
 
 <!-- istruksjonsvideoer -->
 <section class="about" id="iv">
 
-    <h1 class="heading"> <span>Python</span> Pygame</h1>
+    <h1 class="heading"> <span>Mine</span> pygame prosjekter</h1>
 
     <div class="row">
         <div class="content">
-            <h3>Visuell og morsom koding</h3>
-            <p>Hva er pygame? <br> Hva kan man f.eks. bruke det til? <br> Hvordan ser kode i python/pygame ut? <br> Hva er lurt å kunne/lære seg? <br><br> Lær mer her.</p>
-            <a href="./pygame/index.html" class="btn">Pygame</a>
+            <h3>Jumpy</h3>
+            <p>Hoppe spill om å hoppe oppover så høyt som mulig er veldig populære. Jeg har laget mitt eget, toplayer spill med noen egne elemnter. Mitt går ut på å hoppe så høyt som mulig på 40 sek og å slå motstanderen. Faller du av, taper du. Treffer du motstanderene, taper du. Er du lavest når tiden er ute, taper du.</p>
+            <a href="#" class="btn">Se koden her</a>
         </div>
-        <div class="image">
-            <img src="./pygame/elements/jumpy.png" alt="">
+        <div class="image pyImg">
+            <img src="./elements/jumpy.png" alt="">
         </div>
-        
     </div>
-</section>
-
-<section class="about" id="fe">
-
-    <h1 class="heading"> <span>Penger</span> i it</h1>
-
     <div class="row">
-        <div class="image">
-            <!-- <img src="./daafjord/bilder/kai.png" alt=""> -->
-            <i class="fa-solid fa-sack-dollar"></i>
-        </div>
         <div class="content">
-            <h3>Front end developing</h3>
-            <p>Prosjekter kan lett brukes på nytt. En god ramme er noe som man alltid vil kunne bruke på nytt. Her er et godt eksempel på det. </p>
-            <a href="./daafjord/index.html" class="btn">Dåfjord - prosjekt</a>
+            <h3>TicTacToe</h3>
+            <p>De fleste kjenner til TicTacToe. Jeg har lagd TicTacToe i Pygame. Man får beskjed om hvem som vinner, og kan spille på nytt uten å slutte spillet.</p>
+            <a href="#" class="btn">Se koden her</a>
         </div>
-   
+        <div class="image pyImg2">
+            <img src="./elements/tictactoe.png" alt="">
+        </div>
     </div>
 </section>
 
 
 <!-- footer -->
-<footer class="footer">
+<footer class="footer" id="contact">
     
     <div class="container" id="kilder">
 
@@ -192,7 +168,9 @@
 
   </footer>
 
-    <script src="./daafjord/script.js"></script>
+    <script src="../daafjord/script.js"></script>
     
+</body>
+</html>
 </body>
 </html>

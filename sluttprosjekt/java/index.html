@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortifolio</title>
+    <link rel="stylesheet" href="../daafjord/style2.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <style>
+        :root{
+        --main-color: #d9e056;
+        --black:#13131a;
+        --white:#fff;
+        --headerText:rgb(243, 255, 191);
+        --textMainColor:var(--white);
+        --bg:#000000;
+        --border:.1rem solid rgba(255, 255, 255, .3)
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- header start -->
+<header class="header">
+
+    <a href="../index.html" class="logo">¨
+        <div class="fa-solid fa-a fa-10x" id="homebtn"></div>
+    </a>
+
+    <nav class="navbar">
+        <a href="../index.html" class="link">Home</a>
+        <a href="#pi" class="link">Snake</a>
+        <a href="#fa" class="link">DadJokes</a>
+        <a href="#css" class="link">Js+Css</a>
+        <a href="#contact" class="link">Kontakt</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+</header>
+<!-- header end -->
+
+<!-- Home section -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>JavaScript</h3>
+        <p>JavaScript er brukt på denne sida for å få den funksjonell og dynamisk. Mer morro kan man også gjør med JavaScript. Her er noen av mine JavaScript prosjekter.</p>
+        <a href="#pi" class="btn">Les mer</a>
+    </div>
+
+</section>
+<!-- Home section end-->
+
+<!-- Pi -->
+<section class="about hidden" id="pi">
+
+    <h1 class="heading"> <span>SNAKE</span></h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="./elements/snake.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Snake - slik du kjenner det</h3>
+            <p>I JavaScript kan man lage spill i det som heter "canvas"-elementet. Dette har jeg brukt til å lage en klone av snake. </p>
+            <a href="./snake/index.html" class="btn">Prøv!</a>
+        </div>
+
+    </div>
+
+</section>
+<section class="about hidden" id="fa">
+
+    <h1 class="heading"> Dad<span>jokes</span></h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="./elements/api.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>API</h3>
+            <p>Api er en kul greie for å hente (fetche) ting fra nettet i direkte tid. Api er svært nyttig i arbeidslivet, for å hente feks værvarsel eller lignende til nettsider. Høres kjedelig ut, men det kan brukes til morro ting også, feks å hente randome dad-jokes. </p>
+            <a href="./api/api.html" class="btn">DadJoke-generator</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="css">
+    <h1 class="heading"><span>JavaScript-api</span> kombinert css kan gi noe som dette:</h1>
+    <div class="logos">
+        <div class="logo hidden">
+            <img src="./elements/npg.png" alt="npc">
+        </div>
+        <div class="logo hidden">
+            <img src="./elements/npg.png" alt="npc">
+        </div>
+        <div class="logo hidden">
+            <img src="./elements/npg.png" alt="npc">
+        </div>
+        <div class="logo hidden">
+            <img src="./elements/npg.png" alt="npc">
+        </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+<footer class="footer" id="contact">
+    
+    <div class="container" id="kilder">
+
+      <div class="row">
+
+        <div class="footer-col">
+          <h4>OM MEG</h4>
+          <ul>
+            <li>18 år</li>
+            <li>Videregående skole elev på:</li>
+            <li><a href="https://viken.no/nadderud-vgs/">Nadderud Videregående skole</a></li>
+            <li><a href="https://www.google.com/maps/place/Nadderud+vgs/@59.9157031,10.5711091,17z/data=!3m1!4b1!4m5!3m4!1s0x4641132d4c4d7ceb:0xd2ddfa8b4ba260a!8m2!3d59.9157921!4d10.5733661"><i class="fa-solid fa-location-dot"></i> Gjønnesgjordet 30 <br>1357 Bekkestua</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>KILDER</h4>
+          <ul>
+            <li><a href="#">Bildekilder</a></li>
+            <li><a href="#">Inspirasjoner og lenker</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>KONTAKT MEG</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/aksel.wedsetlilleng.9/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/akselwedsetl/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.gulesider.no/aksel+wedset-lilleng+troms%c3%b8/144669792/person"><i class="fa-solid fa-phone"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="../daafjord/script.js"></script>
+    
+</body>
+</html>
