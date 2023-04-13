@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortifolio</title>
+    <link rel="stylesheet" href="../daafjord/style2.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <style>
+        :root{
+        --main-color: #008102;
+        --black:#13131a;
+        --white:#fff;
+        --headerText:rgb(106, 236, 111);
+        --textMainColor:var(--white);
+        --bg:#000000;
+        --border:.1rem solid rgba(255, 255, 255, .3)
+        }
+        .home{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: var(--black);
+        background-size: cover;
+        background-position: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- header start -->
+<header class="header">
+
+    <a href="#" class="logo">¨
+        <div class="fa-solid fa-a fa-10x" id="homebtn"></div>
+    </a>
+
+    <nav class="navbar">
+        <a href="#pi" class="link">Practicle info</a>
+        <a href="#iv" class="link">Pygame</a>
+        <a href="#fa" class="link">Fun activites</a>
+        <a href="#review" class="link">Review</a>
+        <a href="#contact" class="link">Contact</a>
+        <a href="#blogs" class="link">Blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+</header>
+<!-- header end -->
+
+<!-- Home section -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>PYGAME</h3>
+        <p>Mange er kjent med python fra matten. Pygame er en morsom del av Python språket som er 
+            veldig egnet til å lage enkle, men kule og morsomme spill. På denne siden er det litt om pygame og mine pygame
+            prosjekter fra i år. 
+
+        </p>
+        <a href="#pi" class="btn">Lær mer</a>
+    </div>
+
+</section>
+<!-- Home section end-->
+
+<!-- Pi -->
+<section class="about" id="pi">
+
+    <h1 class="heading"> <span>Pygame</span> i et nøtteskall</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <i class="fa-brands fa-python"></i>
+        </div>
+
+        <div class="content">
+            <h3>Hva er pygame</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt, aspernatur doloribus obcaecati soluta vitae ab laudantium voluptatum excepturi ipsam eligendi illum architecto commodi corrupti ad asperiores velit inventore alias.</p>
+            <a href="#" class="btn">Read here</a>
+        </div>
+
+    </div>
+
+</section>
+<section class="about" id="fa">
+
+    <h1 class="heading"> <span>Fun</span> activities</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <!-- <img src="./bilder/nordlys.webp" alt=""> -->
+        </div>
+
+        <div class="content">
+            <h3>Fun things for you to do</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt, aspernatur doloribus obcaecati soluta vitae ab laudantium voluptatum excepturi ipsam eligendi illum architecto commodi corrupti ad asperiores velit inventore alias.</p>
+            <a href="#" class="btn">Read here</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- istruksjonsvideoer -->
+<section class="about" id="iv">
+
+    <h1 class="heading"> <span>Mine</span> pygame prosjekter</h1>
+
+    <div class="row">
+        <div class="content">
+            <h3>Jumpy</h3>
+            <p>Hoppe spill om å hoppe oppover så høyt som mulig er populære. Jeg har laget mitt eget, toplayer spill med noen egne elemnter. Mitt går ut på å hoppe så høyt som mulig på 40 sek og å slå motstanderen. Faller du av, taper du. Treffer du motstanderene, taper du. Er du lavest når tiden er ute, taper du.</p>
+            <a href="#" class="btn">Se koden her</a>
+        </div>
+        <div class="image">
+            <img src="./elements/jumpy.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="content">
+            <h3>TicTacToe</h3>
+            <p>De fleste kjenner til TicTacToe. Jeg har lagd TicTacToe i Pygame. Man får beskjed om hvem som vinner, og kan spille på nytt uten å slutte spillet.</p>
+            <a href="#" class="btn">Se koden her</a>
+        </div>
+        <div class="image">
+            <img src="./elements/tictactoe.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- review -->
+<section class="review" id="review">
+
+    <h1 class="heading"><span>review's</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Consequuntur sit cupiditate architecto enim officiis voluptate 
+            minima aliquam error eum facere optio est, iure 
+            iusto in sequi, provident eveniet. Perferendis, nisi!</p>
+            <h3>Name Surname</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Consequuntur sit cupiditate architecto enim officiis voluptate 
+            minima aliquam error eum facere optio est, iure 
+            iusto in sequi, provident eveniet. Perferendis, nisi!</p>
+            <h3>Name Surname</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Consequuntur sit cupiditate architecto enim officiis voluptate 
+            minima aliquam error eum facere optio est, iure 
+            iusto in sequi, provident eveniet. Perferendis, nisi!</p>
+            <h3>Name Surname</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    
+    <div class="container">
+
+      <div class="row">
+
+        <div class="footer-col">
+          <h4>OM OSS</h4>
+          <ul>
+            <li>Tre vgs elever</li>
+            <li><a href="https://viken.no/nadderud-vgs/">Nadderud Videregående skole</a></li>
+            <li><a href="https://www.google.com/maps/place/Nadderud+vgs/@59.9157031,10.5711091,17z/data=!3m1!4b1!4m5!3m4!1s0x4641132d4c4d7ceb:0xd2ddfa8b4ba260a!8m2!3d59.9157921!4d10.5733661"><i class="fa-solid fa-location-dot"></i> Gjønnesgjordet 30 <br>1357 Bekkestua</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>KILDER</h4>
+          <ul>
+            <li><a href="#">Kilder</a></li>
+            <li><a href="#">Bildekilder</a></li>
+            <li><a href="#">Inspirasjoner</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>CONTACT</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+    <script src="../daafjord/script.js"></script>
+    
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortifolio</title>
+    <link rel="stylesheet" href="./daafjord/style2.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <style>
+        :root{
+        --main-color: #3c6dac;
+        --black:#13131a;
+        --white:#fff;
+        --headerText:rgb(191, 214, 255);
+        --textMainColor:var(--white);
+        --bg:#000000;
+        --border:.1rem solid rgba(255, 255, 255, .3)
+        }
+        .home{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: var(--bg);
+        background-size: cover;
+        background-position: center;
+        /*    opacity: 0.7; */
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- header start -->
+<header class="header">
+
+    <a href="#" class="logo">¨
+        <div class="fa-solid fa-a fa-10x" id="homebtn"></div>
+    </a>
+
+    <nav class="navbar">
+        <a href="#pi" class="link">Practicle info</a>
+        <a href="#iv" class="link">Instrucional videos</a>
+        <a href="#fa" class="link">Fun activites</a>
+        <a href="#review" class="link">Review</a>
+        <a href="#contact" class="link">Contact</a>
+        <a href="#blogs" class="link">Blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+</header>
+<!-- header end -->
+
+<!-- Home section -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Aksel Wedset-Lilleng</h3>
+        <p>Velkommen til mitt IT1 sluttprosjekt. Med 10-12 obligatoriske timer IT i uka, hver uke i et år, har det blitt noen timer prosjekter i løpet av dette året. Mitt sluttprosjekt er derfor sammensatt av noen av disse prosjektene. </p>
+        <a href="#pi" class="btn">Mer om mitt IT år</a>
+    </div>
+
+</section>
+<!-- Home section end-->
+
+<!-- Pi -->
+<section class="about" id="pi">
+
+    <h1 class="heading"> <span>Practicle</span> Info</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <i class="fa-solid fa-info"></i>
+            <!-- <img src="./bilder/nordlys.webp" alt=""> -->
+        </div>
+
+        <div class="content">
+            <h3>Info you must know about the house</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt, aspernatur doloribus obcaecati soluta vitae ab laudantium voluptatum excepturi ipsam eligendi illum architecto commodi corrupti ad asperiores velit inventore alias.</p>
+            <a href="#" class="btn">Read here</a>
+        </div>
+
+    </div>
+
+</section>
+<section class="about" id="fa">
+
+    <h1 class="heading"> <span>Fun</span> activities</h1>
+
+    <div class="row">
+
+        <div class="image">
+            <!-- <img src="./bilder/nordlys.webp" alt=""> -->
+        </div>
+
+        <div class="content">
+            <h3>Fun things for you to do</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt, aspernatur doloribus obcaecati soluta vitae ab laudantium voluptatum excepturi ipsam eligendi illum architecto commodi corrupti ad asperiores velit inventore alias.</p>
+            <a href="#" class="btn">Read here</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- istruksjonsvideoer -->
+<section class="about" id="iv">
+
+    <h1 class="heading"> <span>Instrucional</span> videos</h1>
+
+    <div class="row">
+        <div class="content">
+            <h3>How to use ... </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deserunt, aspernatur doloribus obcaecati soluta vitae ab laudantium voluptatum excepturi ipsam eligendi illum architecto commodi corrupti ad asperiores velit inventore alias.</p>
+            <a href="./daafjord/instr_vid.html" class="btn">Read here</a>
+        </div>
+        <!-- <video width="50%" height="400px" controls>
+            <source src="bilder/video1.mp4" type="video/mp4">
+            <source src="bilder/video1.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video> -->
+        <!-- <video width="50%" height="400px" controls>
+            <source src="bilder/video2.mp4" type="video/mp4">
+            <source src="bilder/video2.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        <video width="50%" height="400px" controls>
+            <source src="bilder/video3.mp4" type="video/mp4">
+            <source src="bilder/video3.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>  -->
+        <!-- <div class="image">
+            <img src="./bilder/nordlys.webp" alt="">
+        </div> -->
+    </div>
+</section>
+<!-- review -->
+<section class="review" id="review">
+
+    <h1 class="heading"><span>review's</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Consequuntur sit cupiditate architecto enim officiis voluptate 
+            minima aliquam error eum facere optio est, iure 
+            iusto in sequi, provident eveniet. Perferendis, nisi!</p>
+            <h3>Name Surname</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Consequuntur sit cupiditate architecto enim officiis voluptate 
+            minima aliquam error eum facere optio est, iure 
+            iusto in sequi, provident eveniet. Perferendis, nisi!</p>
+            <h3>Name Surname</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Consequuntur sit cupiditate architecto enim officiis voluptate 
+            minima aliquam error eum facere optio est, iure 
+            iusto in sequi, provident eveniet. Perferendis, nisi!</p>
+            <h3>Name Surname</h3>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    
+    <div class="container">
+
+      <div class="row">
+
+        <div class="footer-col">
+          <h4>OM OSS</h4>
+          <ul>
+            <li>Tre vgs elever</li>
+            <li><a href="https://viken.no/nadderud-vgs/">Nadderud Videregående skole</a></li>
+            <li><a href="https://www.google.com/maps/place/Nadderud+vgs/@59.9157031,10.5711091,17z/data=!3m1!4b1!4m5!3m4!1s0x4641132d4c4d7ceb:0xd2ddfa8b4ba260a!8m2!3d59.9157921!4d10.5733661"><i class="fa-solid fa-location-dot"></i> Gjønnesgjordet 30 <br>1357 Bekkestua</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>KILDER</h4>
+          <ul>
+            <li><a href="#">Kilder</a></li>
+            <li><a href="#">Bildekilder</a></li>
+            <li><a href="#">Inspirasjoner</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>CONTACT</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+    <script src="./daafjord/script.js"></script>
+    
+</body>
+</html>
