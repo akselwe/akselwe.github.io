@@ -546,12 +546,10 @@ hr{
     margin-top: 0;
 }
 .highscore{
-    margin: 3rem;
+    margin: 1rem;
+    margin-top: 2rem;
 }
-.highscore > h1{
-    font-size: 4rem;
-    margin: 2rem;
-}
+
 .highscore > h2{
     font-size: 2rem;
 }
@@ -562,9 +560,9 @@ hr{
 #scoreCont > h2 {
     color: white;
     background-color: black;
-    margin: auto;
+    margin:auto;
     margin-bottom: 0;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 #r{
