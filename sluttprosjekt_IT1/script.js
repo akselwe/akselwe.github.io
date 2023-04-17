@@ -1,8 +1,11 @@
 let menuBtn = document.querySelector("#menu-btn")
-let navLinks = document.querySelectorAll('.link')
 let navbarEl = document.querySelector('.navbar')
 let searchForm = document.querySelector(".search-form")
+let seachBtn = document.querySelector("#search-btn")
 
+
+/* nav slide til senere bruk, for å ha bare */
+let navLinks = document.querySelectorAll('.link')
 const navSlide = () => {
     //animasjon link
     navLinks.forEach((link, index) => {
@@ -14,23 +17,24 @@ const navSlide = () => {
     });
 }
 
-
+/* når meny trykkes, fjern de andre som er aktive */
 menuBtn.onclick = () =>{
     navbarEl.classList.toggle('active')
     searchForm.classList.remove("active")
-    navSlide()
 }
 
-
-document.querySelector("#search-btn").onclick = () =>{
+/* når search trykkes, fjern de andre som er aktive*/
+seachBtn.onclick = () =>{
     searchForm.classList.toggle("active")
     navbarEl.classList.remove("active")
 }
 
+/* når vinduet scroller, fjern det som er aktivt */
 window.onscroll = () => {
     navbarEl.classList.remove("active")
     searchForm.classList.remove("active")
 }
+
 
 
 /* isIntersecting er en api man kan bruke for å sjekke om noe på siden er på skjermen eller ikke */
@@ -45,6 +49,7 @@ const observerer = new IntersectionObserver((entries) => {
         //else{entry.target.classList.remove('show')}
     })
 });
-
+/* liste med alle .hidden elementer */
 let hiddenEl = document.querySelectorAll('.hidden');
 hiddenEl.forEach((el) => observerer.observe(el));
+

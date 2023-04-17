@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;900&display=swap");
 
+/* KONSTANTER */
 :root{
     --main-color: #d3ad7f;
     --black:#13131a;
@@ -21,14 +22,16 @@
 
 body{
     background: var(--bg);
+    overflow-x: hidden;
 }
 
 html{
     font-size: 62.5%;
-    overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
 }
+
+/* For å gjøre scrollen på høyre siden litt penere bare */
 html::-webkit-scrollbar{
     width: .8rem;
 }
@@ -40,7 +43,7 @@ html::-webkit-scrollbar-thumb{
     border-radius: 5rem;
 }
 
-/* elements/reusables */
+/* elements/reusables --> gode til gjenbruk av kode*/
 section{
     padding: 2rem 7%;
     margin-bottom: 14rem;
@@ -80,6 +83,7 @@ span{
     height: 70vh;
 }
 
+/* intersecting api klasser som togles */
 .hidden{
     opacity: 0;
     filter: blur(5px);
@@ -112,6 +116,14 @@ span{
 .logo:nth-child(4){
     transition-delay: 600ms;
 }
+.logo:nth-child(5){
+    transition-delay: 800ms;
+}
+.logo:nth-child(6){
+    transition-delay: 1000ms;
+}
+
+
 
 /* header start */
 .header{

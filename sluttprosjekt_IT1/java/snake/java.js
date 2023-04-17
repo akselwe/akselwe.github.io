@@ -1,8 +1,8 @@
-
 let restartEl = document.getElementById("r")
 let scoreEl = document.getElementById("score")
 let highscoreEl = document.getElementById("highscore")
 
+/* restart btn */
 restartEl.addEventListener("click", restart)
 function restart(){
     window.location.reload()
@@ -36,6 +36,7 @@ var vy = 0;
 // score teller 
 var score = 0;
 
+/* for å sjekke game over eller ikke, false = spiller fortsatt */
 var gameOver = false;
 
 // når siden loader, kjør følgende funksjon, som run løkken i pygame
@@ -43,13 +44,15 @@ function load(){
     board = document.getElementById("board");
     board.height = rows * blockSize;
     board.width = cols * blockSize;
-    //endre scoreEl sin width 
+    //endre scoreEl sin width for å passe canvas boxen
     scoreEl.style.width = `${ cols * blockSize}px`
-    context = board.getContext("2d"); //for å tegne på brettet, 2 er ... 
+    context = board.getContext("2d"); //for å tegne på brettet
     highscoreEl.innerHTML = `Highscore: ${localStorage.highscore}`
     
     matPos();
     document.addEventListener("keydown", endreRetning);
+
+    /* hvor ofte det skal oppdateres, litt som fps */
     setInterval(update, 1000/10); // 100 ms
 
 }
@@ -75,10 +78,12 @@ function endreRetning(e){
         vx = 1;
         vy = 0;
     }
-    else if (e.code == "Space"){
+
+    /* restart med space */
+    /* else if (e.code == "Space"){
         console.log("space")
-        load()
-    }
+        restart()
+    } */
 }
 
 function update(){
@@ -90,7 +95,7 @@ function update(){
     context.fillStyle = "red";
     context.fillRect(matX,matY,blockSize, blockSize); 
 
-
+    /* hvis hodet matcher matPos, spis maten og legg til en blokk i lengden */
     if (snakeX == matX && snakeY == matY){
 
         if(snakeKropp.length == 0) snakeKropp.push([snakeX, snakeY])
@@ -104,10 +109,11 @@ function update(){
         scoreEl.innerHTML = `Score: ${score}`
     }
 
-    //snake tegn
+    //snake tegne slangen
     context.fillStyle = "#d3ad7f";
     snakeX += vx * blockSize;
     snakeY += vy * blockSize;
+    /* xpos, ypos, bredde, høyde */
     context.fillRect(snakeX,snakeY,blockSize, blockSize);
 
     for (let i = 0; i < snakeKropp.length; i++){
@@ -137,7 +143,7 @@ function update(){
     }
    }
 
-
+   /* local storage for å lagre highscore */
     if (!localStorage.highscore){
         localStorage.highscore = 0
     }
@@ -168,6 +174,8 @@ function gameOverScreen(){
     context.fillText("Your score: " + score, board.width/2 - 150, board.height/2 + 50)
     
    }
+
+/* gjør skjermen samme farge som slangen så det ser ut som slangen går utover hele skjermen// dør */
 function backgroundDynam(){
     document.body.style.backgroundColor = "#d3ad7f";
 }
@@ -177,5 +185,3 @@ function matPos(){
     matX = Math.floor(Math.random(0,1) * cols) * blockSize;
     matY = Math.floor(Math.random(0,1) * rows) * blockSize;
 }
-
-
