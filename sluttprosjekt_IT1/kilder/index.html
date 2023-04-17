@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortifolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <style>
+        :root{
+        --main-color: #3c6dac;
+        --black:#13131a;
+        --white:#fff;
+        --headerText:rgb(191, 214, 255);
+        --textMainColor:var(--white);
+        --bg:#000000;
+        --border:.1rem solid rgba(255, 255, 255, .3)
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color:var(--headerText);
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- header start -->
+<header class="header">
+
+    <a href="../index.html" class="logo">
+        <div class="fa-solid fa-a fa-10x" id="homebtn"></div>
+    </a>
+
+    <nav class="navbar">
+        <a href="../index.html" class="link">Home</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+</header>
+<!-- header end -->
+
+<!-- Pi -->
+<section class="about" id="pi">
+
+    <h1 class="heading"> <span>KILDER</span></h1>
+
+    <div class="row">
+        <div class="content">
+            <p><a href="https://www.youtube.com/watch?v=ki00QtsoiJU">Youtube - Api JavaScript</a></p>
+            <p><a href="https://www.youtube.com/watch?v=baBq5GAL0_U">Youtube - Snake JavaSript</a></p>
+
+            <p>Bilder til Dåfjorden siden: private fra de som skal ha siden.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    
+    <div class="container" id="kilder">
+
+      <div class="row">
+
+        <div class="footer-col">
+          <h4>OM MEG</h4>
+          <ul>
+            <li>18 år</li>
+            <li>Videregående skole elev på:</li>
+            <li><a href="https://viken.no/nadderud-vgs/">Nadderud Videregående skole</a></li>
+            <li><a href="https://www.google.com/maps/place/Nadderud+vgs/@59.9157031,10.5711091,17z/data=!3m1!4b1!4m5!3m4!1s0x4641132d4c4d7ceb:0xd2ddfa8b4ba260a!8m2!3d59.9157921!4d10.5733661"><i class="fa-solid fa-location-dot"></i> Gjønnesgjordet 30 <br>1357 Bekkestua</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>KILDER</h4>
+          <ul>
+            <li><a href="#">Bildekilder</a></li>
+            <li><a href="#">Inspirasjoner og lenker</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>KONTAKT MEG</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/aksel.wedsetlilleng.9/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/akselwedsetl/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.gulesider.no/aksel+wedset-lilleng+troms%c3%b8/144669792/person"><i class="fa-solid fa-phone"></i></a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+<script src="../script.js"></script> 
+</body>
+</html>
