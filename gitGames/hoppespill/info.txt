@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+HER ER LENKE TIL MINE KILDER: 
+https://www.youtube.com/playlist?list=PLjcN1EyupaQlBSrfP4_9SdpJIcfnSJgzL 
+
+Takk til BART for kul bakgrunn fra OpenGameArt:
+https://opengameart.org/content/sky-backdrop 
+
+Sounds: 
+https://opengameart.org/content/slime-jump-effect 
+https://opengameart.org/content/pack-of-loopable-game-music 
+
+Bilder: 
+https://github.com/russs123/Jumpy/tree/main/assets 
+Her er følgende bilder hentet (ikke alle brukt, men i mappen så lett å bytte mellom)
+-Bird.png
+-Jump.png
+-Platform.png
+
+I tillegg er det hentet bilder av selve karrakterene fra OpenGameArt. 
+
+
+Inspirasjon er hentet fra youtube, men gjort toplayer, race og annerledes fysikk som jeg synes var veldig gøy
+
