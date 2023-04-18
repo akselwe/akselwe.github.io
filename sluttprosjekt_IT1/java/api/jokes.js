@@ -28,7 +28,7 @@ async function fetchJoke(){
         },
     });
     const data = response.json();
-        //console.log(data["joke"]) // data["joke"] er der vitsen ligger, key/value
+        console.log(data) // data["joke"] er der vitsen ligger, key/value
         return data;
 }
 

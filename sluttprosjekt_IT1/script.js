@@ -3,7 +3,6 @@ let navbarEl = document.querySelector('.navbar')
 let searchForm = document.querySelector(".search-form")
 let seachBtn = document.querySelector("#search-btn")
 
-
 /* nav slide til senere bruk, for å ha bare */
 let navLinks = document.querySelectorAll('.link')
 const navSlide = () => {
