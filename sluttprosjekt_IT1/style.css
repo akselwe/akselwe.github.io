@@ -158,6 +158,7 @@ span{
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
 }
+
 .header .icons div{
     color:var(--white);
     cursor: pointer;
@@ -222,6 +223,7 @@ span{
         display: inline-block;
     }
     .header .navbar{
+        display: none;
         position: absolute;
         /* bedre måte med margin? */
         top: 7%;
@@ -232,6 +234,7 @@ span{
     }
     .header .navbar.active{
         right: 0.3%;
+        display: block;
     }
    
     .header .navbar a{
