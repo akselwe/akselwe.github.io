@@ -146,6 +146,7 @@ function update(){
    /* local storage for å lagre highscore */
     if (!localStorage.highscore){
         localStorage.highscore = 0
+        highscoreEl.innerHTML = `SCORE to BEAT: ${localStorage.highscore}`
     }
     if (score > Number(localStorage.highscore)){
         localStorage.highscore = score
